@@ -1,6 +1,7 @@
 import About from "../Components/About/About";
 import Chairman from "../Components/About/Chairman";
 import Milestones from "../Components/About/Milestones";
+import Subsaidaries from "../Components/About/Subsaidaries";
 
 export default function Page() {
   return (
@@ -44,6 +45,7 @@ export default function Page() {
       <About />
       <Milestones />
       <Chairman />
+      <Subsaidaries />
     </div>
   );
 }
