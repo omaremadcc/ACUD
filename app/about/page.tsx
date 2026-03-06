@@ -1,3 +1,5 @@
+import About from "../Components/About/About";
+
 export default function Page() {
   return (
     <div>
@@ -37,6 +39,7 @@ export default function Page() {
           className=" max-w-[40%] h-auto"
         />
       </div>
+      <About />
     </div>
   );
 }
