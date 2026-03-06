@@ -5,10 +5,11 @@ import NewCapital from "./Components/HeroPage/NewCapital";
 import Parteners from "./Components/HeroPage/Parteners";
 import Testimonials from "./Components/HeroPage/Testimonials";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
-    <div className="mb-60">
+    <div className="">
       <Navbar />
       <Hero />
       <Awards />
@@ -16,6 +17,7 @@ export default function Home() {
       <CapitalDistricts />
       <Parteners />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

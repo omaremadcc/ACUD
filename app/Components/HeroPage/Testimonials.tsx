@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <div className="flex flex-col lg:flex-row justify-center gap-10 mx-auto px-10">
+    <div className="flex flex-col lg:flex-row justify-center gap-10 mx-auto px-10 py-20">
       <div>
         <h2 className="text-5xl md:text-8xl">Partener Testimonials</h2>
         <p className="md:text-2xl text-muted-text">
