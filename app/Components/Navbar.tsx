@@ -3,7 +3,7 @@ import { CiGlobe } from "react-icons/ci";
 
 export default function Navbar() {
   return (
-    <div className="px-3 py-5">
+    <div className="px-3 py-5 fixed top-0 left-0">
       <div className="flex items-center justify-between">
         <Link href="/">
           <img src="/Logo.svg" alt="logo" className="h-20 cursor-pointer" />
