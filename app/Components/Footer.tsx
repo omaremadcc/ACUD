@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <div className="w-screen bg-secondary-background px-5 py-5">
       <img src="/Logo.svg" alt="logo" className="w-60 mb-20" />
-      <div className="flex items-end justify-between">
-        <div className="w-fit grid grid-cols-3 gap-x-4 gap-y-2">
+      <div className="flex flex-col md:flex-row items-end justify-center md:justify-between gap-5">
+        <div className="w-fit grid grid-cols-2 md:grid-cols-3 gap-x-2 md:gap-x-4 gap-y-2">
           <Link005 className="w-fit" href="/">
             Home
           </Link005>
@@ -39,7 +39,7 @@ export default function Footer() {
             Privacy Policy
           </Link005>
         </div>
-        <div className="flex gap-3">
+        <div className="flex justify-between w-full md:justify-start md:w-fit gap-3">
           <Link
             href="/"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
