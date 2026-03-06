@@ -10,7 +10,7 @@ export default function Awards() {
         Icon={AiFillTrophy}
       />
       <div className="flex items-center justify-center flex-col gap-5 lg:flex-row lg:gap-20 xl:gap-35 my-20">
-        {["Big5.png", "Global.png", "LivCom.png", "Tier3.png"].map(
+        {["Big5.webp", "Global.webp", "LivCom.webp", "Tier3.webp"].map(
           (img, index) => (
             <div
               key={index}
