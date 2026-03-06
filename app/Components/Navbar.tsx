@@ -3,7 +3,7 @@ import { CiGlobe } from "react-icons/ci";
 
 export default function Navbar() {
   return (
-    <div className="px-3 py-5 fixed top-0 left-0">
+    <div className="px-3 py-5 fixed top-0 left-0 w-full">
       <div className="flex items-center justify-between">
         <Link href="/">
           <img src="/Logo.svg" alt="logo" className="h-20 cursor-pointer" />
@@ -42,7 +42,7 @@ export default function Navbar() {
           <CiGlobe className="cursor-pointer hover:text-white transition-all" />
         </div>
       </div>
-      <div className="w-[98vw] h-0.5 bg-muted-text mx-auto my-3"></div>
+      {/*<div className="w-[98vw] h-0.5 bg-muted-text mx-auto my-3"></div>*/}
     </div>
   );
 }
