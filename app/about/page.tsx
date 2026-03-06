@@ -1,4 +1,5 @@
 import About from "../Components/About/About";
+import Milestones from "../Components/About/Milestones";
 
 export default function Page() {
   return (
@@ -40,6 +41,7 @@ export default function Page() {
         />
       </div>
       <About />
+      <Milestones />
     </div>
   );
 }
