@@ -4,22 +4,16 @@ import Hero from "./Components/HeroPage/Hero";
 import NewCapital from "./Components/HeroPage/NewCapital";
 import Parteners from "./Components/HeroPage/Parteners";
 import Testimonials from "./Components/HeroPage/Testimonials";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Intro from "./Components/Intro";
 
 export default function Home() {
   return (
     <div className="">
-      {/*<Intro />*/}
-      <Navbar />
       <Hero />
       <Awards />
       <NewCapital />
       <CapitalDistricts />
       <Parteners />
       <Testimonials />
-      <Footer />
     </div>
   );
 }
