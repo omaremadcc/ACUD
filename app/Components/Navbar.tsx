@@ -79,7 +79,7 @@ export default function Navbar() {
           }}
           initial="hidden"
           animate={toggle ? "visible" : "hidden"}
-          transition={{ duration: 0.5, ease: CUBIC_BEIZER }}
+          transition={{ duration: 0.7, ease: CUBIC_BEIZER }}
         >
           <Link
             href="/"
