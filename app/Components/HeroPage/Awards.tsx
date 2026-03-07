@@ -3,7 +3,7 @@ import SectionHeading from "../sectionHeading";
 
 export default function Awards() {
   return (
-    <div className="my-15">
+    <div className="my-15 responsive-container">
       <SectionHeading
         text="Awards"
         subText="Celebrating Achievements and International Recognition for ACUD"

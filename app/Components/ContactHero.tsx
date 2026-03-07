@@ -6,7 +6,7 @@ import RevealText from "./RevealText";
 
 export default function ContactHero() {
   return (
-    <section className="flex flex-col justify-end items-center md:items-start w-screen h-screen gap-10 px-5 py-2">
+    <section className="flex flex-col justify-end items-center md:items-start w-screen h-[100dvh] gap-10 px-5 py-2">
       <div className="w-fit pl-5 space-y-3 xl:grid xl:grid-cols-2">
         <Card
           Icon={AiFillClockCircle}

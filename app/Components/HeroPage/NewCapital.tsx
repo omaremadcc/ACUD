@@ -83,13 +83,13 @@ function Card({
   subHeading?: string;
 }) {
   return (
-    <div className="flex items-center gap-5">
+    <div className="flex items-center gap-5 responsive-container">
       <Icon className="text-primary text-6xl" />
       <div className="">
         <h4 className="text-semi-muted-text text-2xl md:text-base lg:text-2xl leading-none">
           {subText}
         </h4>
-        <h3 className="font-semibold text-[56px] md:text-5xl lg:text-[56px] leading-none">
+        <h3 className="font-semibold text-4xl md:text-5xl lg:text-[56px] leading-none">
           {text}
           <span className="text-xl lg:text-2xl text-muted-text">
             {subHeading}

@@ -6,7 +6,7 @@ import RevealText from "../Components/RevealText";
 export default function NewCapital() {
   return (
     <div>
-      <div className="w-screen h-screen flex justify-center md:justify-start items-end px-3 py-2">
+      <div className="w-screen h-[100dvh] flex justify-center md:justify-start items-end px-3 py-2">
         <div>
           <RevealText delay={0.4} duration={0.6}>
             <h4 className="hero-subheading">

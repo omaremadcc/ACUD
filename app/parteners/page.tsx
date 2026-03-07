@@ -6,7 +6,7 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 export default function Parteners() {
   return (
     <>
-      <div className="w-screen h-screen flex flex-col justify-end items-center gap-20">
+      <div className="w-screen h-[100dvh] flex flex-col justify-end items-center gap-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20">
           <div className="flex flex-col items-center justify-center">
             <BiGlobe className="text-primary text-2xl md:text-4xl" />

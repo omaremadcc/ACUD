@@ -36,7 +36,7 @@ export default function Hero() {
         }}
         animate={reverse ? "hidden" : ""}
         transition={{ delay: 0.2, duration: 0.8, ease: CUBIC_BEIZER }}
-        className="bg-secondary-background w-screen h-screen fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+        className="bg-secondary-background w-screen h-[100dvh] fixed inset-0 z-[9999] flex flex-col items-center justify-center"
       >
         <motion.div
           variants={{
@@ -76,27 +76,18 @@ export default function Hero() {
         </div>
       </motion.div>
       {reverse && (
-        <div className="min-h-screen w-screen flex flex-col items-center lg:items-start justify-end ">
+        <div className="min-h-[100dvh] w-screen flex flex-col items-center lg:items-start justify-end ">
           <div className="absolute inset-0 z-[-2] overflow-hidden text-white">
             <video
               src={"/hero3.webm"}
               autoPlay
               muted
               loop
-              className="object-cover brightness-30 bg-white h-screen w-screen"
+              className="object-cover brightness-30 bg-white h-[100dvh] w-screen"
             />
           </div>
           <div className="absolute z-[-1] inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,1)_0%,transparent_50%,transparent_50%,rgba(0,0,0,1)_100%)]"></div>
           <div className="px-5 text-center lg:text-left">
-            {/*<RevealText delay={0.6} duration={0.6}>
-              <p className="text-base md:text-2xl text-semi-muted-text lg:max-w-[40%]">
-                <span className="text-white">ACUD</span>, founded in{" "}
-                <span className="text-white">2016</span>, leads the development
-                of <span className="text-white">Egypt's New Capital</span>. A
-                smart, sustainable city built on innovation, technology, and
-                green design.
-              </p>
-            </RevealText>*/}
             <RevealText delay={0.4} duration={0.6}>
               <h4 className="hero-subheading">
                 Welcome to The Future of Egypt
@@ -108,7 +99,7 @@ export default function Hero() {
           </div>
         </div>
       )}
-      <div className="py-20 w-screen">
+      <div className="py-10 responsive-container">
         <h4 className="text-muted-text text-xl md:text-xl font-medium mx-auto text-center md:max-w-1/2">
           ADMINSTRATIVE CAPITAL FOR URBAN DEVELOPMENT
         </h4>

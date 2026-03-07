@@ -36,7 +36,7 @@ export default function Intro() {
       }}
       animate={reverse ? "hidden" : ""}
       transition={{ delay: 0.2, duration: 0.8, ease: CUBIC_BEIZER }}
-      className="bg-secondary-background w-screen h-screen fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+      className="bg-secondary-background w-screen h-[100dvh] fixed inset-0 z-[9999] flex flex-col items-center justify-center"
     >
       <motion.div
         variants={{
