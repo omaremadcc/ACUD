@@ -1,5 +1,3 @@
-import Navbar from "@/app/Components/Navbar";
-import Footer from "@/app/Components/Footer";
 import ContactHero from "@/app/Components/ContactHero";
 
 export default function ContactPage() {
