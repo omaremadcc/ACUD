@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import React from "react";
 
 import { cn } from "@/lib/utils";
@@ -62,11 +62,14 @@ export const Skiper58 = () => {
 
 const STAGGER = 0.035;
 
+const CUBIC_BEIZER = cubicBezier(0.6, 0.05, 0, 0.9);
+
 const TextRoll: React.FC<{
   children: string;
   className?: string;
   center?: boolean;
-}> = ({ children, className, center = false }) => {
+  duration?: number;
+}> = ({ children, duration = 0.5, className, center = false }) => {
   return (
     <motion.span
       initial="initial"
@@ -93,8 +96,9 @@ const TextRoll: React.FC<{
                 },
               }}
               transition={{
-                ease: "easeInOut",
+                ease: CUBIC_BEIZER,
                 delay,
+                duration,
               }}
               className="inline-block"
               key={i}
@@ -121,8 +125,9 @@ const TextRoll: React.FC<{
                 },
               }}
               transition={{
-                ease: "easeInOut",
+                ease: CUBIC_BEIZER,
                 delay,
+                duration,
               }}
               className="inline-block"
               key={i}
