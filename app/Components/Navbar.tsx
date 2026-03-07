@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <div
       className={clsx(
-        "px-3 py-5 fixed top-0 left-0 w-full transition-all duration-400",
+        "px-3 py-5 fixed top-0 left-0 w-full transition-all duration-400 z-100",
         {
           "bg-secondary-background/50 duration-800": scrolled,
         },
