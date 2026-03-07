@@ -16,15 +16,27 @@
 }
 
 body {
-    @apply bg-background text-text font-figtree;
+    @apply bg-background text-text font-figtree overflow-x-hidden w-screen;
 }
 
 .responsive-container {
-    @apply mx-auto w-[95%] md:w-[85%] lg:w-[70%];
+    @apply mx-auto w-[90%] md:w-[85%] lg:w-[70%];
 }
 .hero-heading {
     @apply text-[14vw] leading-none uppercase font-semibold mb-3 text-white tracking-tighter text-center md:text-left;
 }
 .hero-subheading {
     @apply text-muted-text text-[3vw] tracking-tight font-medium text-center md:text-left;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
