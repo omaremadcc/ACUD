@@ -1,7 +1,6 @@
 "use client";
 import { motion, cubicBezier } from "framer-motion";
 import Link from "next/link";
-import { CiGlobe } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { MenuIcon } from "@/components/ui/skiper-ui/skiper99";

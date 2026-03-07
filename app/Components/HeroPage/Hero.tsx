@@ -87,25 +87,22 @@ export default function Hero() {
           </div>
           <div className="absolute z-[-1] inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,1)_0%,transparent_50%,transparent_50%,rgba(0,0,0,1)_100%)]"></div>
           <div className="px-5 text-center lg:text-left">
-            <RevealText delay={1.4} duration={0.6}>
-              <p className="text-base md:text-2xl text-muted-text lg:max-w-[40%]">
-                <span className="text-semi-muted-text">ACUD</span>, founded in{" "}
-                <span className="text-semi-muted-text">2016</span>, leads the
-                development of{" "}
-                <span className="text-semi-muted-text">
-                  Egypt's New Capital
-                </span>
-                . A smart, sustainable city built on innovation, technology, and
+            <RevealText delay={0.6} duration={0.6}>
+              <p className="text-base md:text-2xl text-semi-muted-text lg:max-w-[40%]">
+                <span className="text-white">ACUD</span>, founded in{" "}
+                <span className="text-white">2016</span>, leads the development
+                of <span className="text-white">Egypt's New Capital</span>. A
+                smart, sustainable city built on innovation, technology, and
                 green design.
               </p>
             </RevealText>
-            <RevealText delay={1.2} duration={0.6}>
-              <h4 className="text-semi-muted-text text-lg md:text-5xl font-bold">
+            <RevealText delay={0.4} duration={0.6}>
+              <h4 className="text-text text-lg md:text-5xl font-bold">
                 Welcome to The Future of Egypt
               </h4>
             </RevealText>
-            <RevealText delay={1} duration={0.6}>
-              <h1 className="text-6xl md:text-8xl uppercase font-extrabold mb-3">
+            <RevealText delay={0.2} duration={0.6}>
+              <h1 className="text-6xl md:text-8xl uppercase font-extrabold mb-3 text-white">
                 Egypt's Smart City
               </h1>
             </RevealText>
