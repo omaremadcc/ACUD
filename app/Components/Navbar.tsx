@@ -25,7 +25,7 @@ export default function Navbar() {
       className={clsx(
         "px-3 py-5 fixed top-0 left-0 w-full transition-all duration-400 z-100",
         {
-          "bg-secondary-background/50 duration-800": scrolled,
+          "": scrolled,
         },
       )}
     >
@@ -70,7 +70,7 @@ export default function Navbar() {
           onClick={() => setToggle(!toggle)}
           className="fixed top-10 right-10 z-120"
         >
-          <MenuIcon />
+          <MenuIcon isToggled={toggle} />
         </button>
         <motion.div
           className="bg-background fixed inset-0 gap-1 flex flex-col items-center justify-center text-[calc(1.5em+6vw)] text-nowrap font-extrabold"

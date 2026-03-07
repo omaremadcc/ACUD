@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -47,8 +47,19 @@ const ArrowIcon = ({ className }: { className?: string }) => {
   );
 };
 
-export const MenuIcon = ({ className }: { className?: string }) => {
-  const [toggle, setToggle] = useState(false);
+export const MenuIcon = ({
+  className,
+  isToggled,
+}: {
+  className?: string;
+  isToggled?: boolean;
+}) => {
+  console.log(isToggled);
+  const [toggle, setToggle] = useState(isToggled);
+
+  useEffect(() => {
+    setToggle(isToggled);
+  }, [isToggled]);
 
   return (
     <div
