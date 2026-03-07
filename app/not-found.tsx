@@ -33,7 +33,15 @@ export default function NotFound() {
   );
 }
 
-function Log({ cord, location, status }) {
+function Log({
+  cord,
+  location,
+  status,
+}: {
+  cord: string;
+  location: string;
+  status: string;
+}) {
   return (
     <p className="">
       [CORD:{" "}
