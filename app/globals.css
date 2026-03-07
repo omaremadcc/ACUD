@@ -22,3 +22,9 @@ body {
 .responsive-container {
     @apply mx-auto w-[95%] md:w-[85%] lg:w-[70%];
 }
+.hero-heading {
+    @apply text-[14vw] leading-none uppercase font-semibold mb-3 text-white tracking-tighter text-center md:text-left;
+}
+.hero-subheading {
+    @apply text-muted-text text-[3vw] tracking-tight font-medium text-center md:text-left;
+}
