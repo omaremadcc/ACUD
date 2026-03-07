@@ -23,7 +23,7 @@ export default function Hero() {
         }
         return prev + 1;
       });
-    }, 200);
+    }, 150);
 
     return () => clearInterval(interval);
   }, [startImages]);
@@ -87,7 +87,7 @@ export default function Hero() {
           </div>
           <div className="absolute z-[-1] inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,1)_0%,transparent_50%,transparent_50%,rgba(0,0,0,1)_100%)]"></div>
           <div className="px-5 text-center lg:text-left">
-            <RevealText delay={0.6} duration={0.6}>
+            {/*<RevealText delay={0.6} duration={0.6}>
               <p className="text-base md:text-2xl text-semi-muted-text lg:max-w-[40%]">
                 <span className="text-white">ACUD</span>, founded in{" "}
                 <span className="text-white">2016</span>, leads the development
@@ -95,20 +95,29 @@ export default function Hero() {
                 smart, sustainable city built on innovation, technology, and
                 green design.
               </p>
-            </RevealText>
+            </RevealText>*/}
             <RevealText delay={0.4} duration={0.6}>
-              <h4 className="text-text text-lg md:text-5xl font-bold">
+              <h4 className="hero-subheading">
                 Welcome to The Future of Egypt
               </h4>
             </RevealText>
             <RevealText delay={0.2} duration={0.6}>
-              <h1 className="text-6xl md:text-8xl uppercase font-extrabold mb-3 text-white">
-                Egypt's Smart City
-              </h1>
+              <h1 className="hero-heading">CAPITAL RISING</h1>
             </RevealText>
           </div>
         </div>
       )}
+      <div className="py-20 w-screen">
+        <h4 className="text-muted-text text-xl md:text-xl font-medium mx-auto text-center md:max-w-1/2">
+          ADMINSTRATIVE CAPITAL FOR URBAN DEVELOPMENT
+        </h4>
+        <p className="text-base md:text-4xl text-semi-muted-text lg:max-w-[40%] text-center mx-auto">
+          <span className="text-text">ACUD</span>, founded in{" "}
+          <span className="text-text">2016</span>, leads the development of{" "}
+          <span className="text-text">Egypt's New Capital</span>. A smart,
+          sustainable city built on innovation, technology, and green design.
+        </p>
+      </div>
     </>
   );
 }

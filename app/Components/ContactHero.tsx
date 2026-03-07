@@ -2,11 +2,12 @@ import { IconType } from "react-icons";
 import { AiFillClockCircle, AiFillPhone } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
+import RevealText from "./RevealText";
 
 export default function ContactHero() {
   return (
-    <section className="flex flex-col justify-end items-start w-screen h-screen gap-10 px-5 py-2">
-      <div className="w-fit pl-5 space-y-3">
+    <section className="flex flex-col justify-end items-center md:items-start w-screen h-screen gap-10 px-5 py-2">
+      <div className="w-fit pl-5 space-y-3 xl:grid xl:grid-cols-2">
         <Card
           Icon={AiFillClockCircle}
           text="Sunday - Thursday"
@@ -21,12 +22,14 @@ export default function ContactHero() {
         />
       </div>
       <div>
-        <h4 className="text-lg md:text-3xl lg:text-4xl font-medium text-muted-text">
-          We'd love to hear from you. Reach out to us anytime.
-        </h4>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold">
-          Contact US
-        </h1>
+        <RevealText delay={0.6} duration={0.6}>
+          <h4 className="hero-subheading">
+            We'd love to hear from you. Reach out to us anytime.
+          </h4>
+        </RevealText>
+        <RevealText delay={0.4} duration={0.6}>
+          <h1 className="hero-heading">CONTACT US</h1>
+        </RevealText>
       </div>
     </section>
   );
