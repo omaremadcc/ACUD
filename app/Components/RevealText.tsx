@@ -16,7 +16,7 @@ export default function RevealText({
     <div className="overflow-hidden">
       <motion.div
         initial={{ y: "100%" }}
-        whileInView={{ y: 0 }}
+        animate={{ y: 0 }}
         transition={{ duration, ease: CUBIC_BEIZER, delay }}
         viewport={{ once: true }}
         className="overflow-hidden"
