@@ -31,7 +31,7 @@ export default function Parteners() {
             </h3>
           </RevealText>
           <RevealText>
-            <h1 className="hero-heading">OUR PARTENERS</h1>
+            <h1 className="hero-heading">PARTENERS</h1>
           </RevealText>
         </div>
       </div>
