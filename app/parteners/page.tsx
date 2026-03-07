@@ -25,12 +25,12 @@ export default function Parteners() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <RevealText>
+          <RevealText delay={0.6} duration={0.6}>
             <h3 className="hero-subheading">
               Building the future together with world-class partners
             </h3>
           </RevealText>
-          <RevealText>
+          <RevealText delay={0.4} duration={0.6}>
             <h1 className="hero-heading">PARTENERS</h1>
           </RevealText>
         </div>
