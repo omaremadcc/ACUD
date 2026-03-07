@@ -41,37 +41,43 @@ export default function Footer() {
         </div>
         <div className="flex justify-between w-full md:justify-start md:w-fit gap-3">
           <Link
-            href="/"
+            href="https://maps.app.goo.gl/PzFXSeqAxBDW8ZnF8"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <FaLocationDot />
           </Link>
           <Link
-            href="/"
+            href="https://www.linkedin.com/company/administrative-capital-for-urban-development/"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <FiLinkedin />
           </Link>
           <Link
-            href="/"
+            href="https://x.com/ACUD_Egypt"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <BsTwitterX />
           </Link>
           <Link
-            href="/"
+            href="https://www.instagram.com/acud.eg/"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <AiFillInstagram />
           </Link>
           <Link
-            href="/"
+            href="https://www.facebook.com/ACUDEGY/"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <FiFacebook />
           </Link>
           <Link
-            href="/"
+            href="https://www.youtube.com/@AdministrativeCapital"
+            target="_blank"
             className="text-2xl hover:text-text text-semi-muted-text transition-all"
           >
             <AiFillYoutube />
