@@ -66,10 +66,11 @@ export default function Hero() {
               if (!startImages) setStartImages(true);
             }}
           >
-            <img
-              src={`/loading/ready/${images[index]}.webp`}
-              className="size-[200px] object-cover"
-              alt=""
+            <video
+              src="/loading/ready/output.webm"
+              autoPlay
+              muted
+              onEnded={(e) => setReverse(true)}
             />
           </motion.div>
         </div>
@@ -78,7 +79,7 @@ export default function Hero() {
         <div className="min-h-screen w-screen flex flex-col items-center lg:items-start justify-end ">
           <div className="absolute inset-0 z-[-2] overflow-hidden text-white">
             <video
-              src={"/hero.webm"}
+              src={"/hero3.webm"}
               autoPlay
               muted
               loop
