@@ -14,28 +14,28 @@ export default function Footer() {
           <Link005 className="w-fit" href="/">
             Home
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/about">
             About ACUD
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/new-capital">
             New Capital
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/careers">
             Careers
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/media-center">
             Media Center
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/parteners">
             Parteners
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/contact">
             Contact Us
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/csr">
             CSR
           </Link005>
-          <Link005 className="w-fit" href="/">
+          <Link005 className="w-fit" href="/privacy-policy">
             Privacy Policy
           </Link005>
         </div>
