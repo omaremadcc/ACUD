@@ -18,7 +18,7 @@ export const RevealItem = ({
       <motion.div
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
-        viewport={{ once }}
+        viewport={{ once, amount: 0 }}
         transition={{ duration, delay, ease: CUBIC_BEIZER }}
         className="overflow-hidden"
       >

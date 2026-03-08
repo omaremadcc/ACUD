@@ -2,7 +2,9 @@ import About from "../Components/About/About";
 import Chairman from "../Components/About/Chairman";
 import Milestones from "../Components/About/Milestones";
 import Subsaidaries from "../Components/About/Subsaidaries";
+import { RevealItem } from "../Components/RevealItem";
 import RevealText from "../Components/RevealText";
+import SlideUpText from "../Components/SlideUpText";
 
 export default function Page() {
   return (
@@ -19,29 +21,39 @@ export default function Page() {
       </div>
       <div className="flex gap-10 justify-center items-start flex-col-reverse md:flex-row py-20 responsive-container">
         <div className="">
-          <span className="text-lg md:text-2xl text-semi-muted-text font-semibold">
+          <SlideUpText className="text-lg md:text-2xl text-semi-muted-text font-semibold">
             Our Story
-          </span>
-          <h2 className="font-semibold text-3xl md:text-5xl">
+          </SlideUpText>
+          <SlideUpText
+            delay={0.3}
+            mode="word"
+            className="font-semibold text-3xl md:text-5xl"
+          >
             Leading Egypt's Urban Transformation
-          </h2>
-          <p className="text-muted-text md:text-xl">
+          </SlideUpText>
+          <SlideUpText
+            mode="word"
+            delay={0.6}
+            className="text-muted-text md:text-xl"
+          >
             ACUD, founded in 2016, is the driving force behind Egypt's most
             ambitious urban development project - the New Capital. Our mission
             is to create a world-class, sustainable city that serves as the new
             political and administrative hub of Egypt.
-          </p>
-          <p className="text-muted-text md:text-xl mt-5">
+          </SlideUpText>
+          <SlideUpText
+            mode="word"
+            delay={0.9}
+            className="text-muted-text md:text-xl mt-5"
+          >
             We are committed to excellence, innovation, and sustainable
             development, working with global partners to build a city that meets
             the highest international standards.
-          </p>
+          </SlideUpText>
         </div>
-        <img
-          src="/about/1.webp"
-          alt="New Capital"
-          className=" max-w-[40%] h-auto"
-        />
+        <RevealItem delay={0.9} duration={0.8}>
+          <img src="/about/1.webp" alt="New Capital" className="" />
+        </RevealItem>
       </div>
       <About />
       <Milestones />

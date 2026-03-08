@@ -25,7 +25,7 @@ export default function SlideUpText({
     const words = children.split(" ");
 
     return (
-      <span className={className}>
+      <span className={className} style={{ display: "block" }}>
         {words.map((word, i) => (
           <span key={`${word}-${i}`}>
             <span
@@ -67,7 +67,7 @@ export default function SlideUpText({
   let globalIndex = 0;
 
   return (
-    <span className={className}>
+    <span className={className} style={{ display: "block" }}>
       {words.map((word, wordIndex) => (
         <span
           key={`${word}-${wordIndex}`}

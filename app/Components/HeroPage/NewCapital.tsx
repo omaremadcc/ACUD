@@ -63,11 +63,13 @@ export default function NewCapital() {
         subText="New Capital. New Start"
         Icon={GiObelisk}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-y-10 responsive-container my-20 px-5">
-        {facts.map((fact, index) => (
-          <Card key={index} {...fact} delay={index * 0.2} />
-        ))}
-      </div>
+      <RevealItem>
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-y-10 responsive-container my-20 px-5">
+          {facts.map((fact, index) => (
+            <Card key={index} {...fact} />
+          ))}
+        </div>
+      </RevealItem>
     </div>
   );
 }
@@ -77,30 +79,26 @@ function Card({
   text,
   subText,
   subHeading,
-  delay,
 }: {
   Icon: IconType;
   text: string;
   subText: string;
   subHeading?: string;
-  delay: number;
 }) {
   return (
-    <RevealItem delay={delay}>
-      <div className="flex items-center gap-5 responsive-container w-full">
-        <Icon className="text-primary text-6xl" />
-        <div className="">
-          <h4 className="text-semi-muted-text text-2xl md:text-base lg:text-2xl leading-none">
-            {subText}
-          </h4>
-          <h3 className="font-semibold text-4xl md:text-5xl lg:text-[56px] leading-none">
-            {text}
-            <span className="text-xl lg:text-2xl text-muted-text">
-              {subHeading}
-            </span>
-          </h3>
-        </div>
+    <div className="flex items-center gap-5 responsive-container w-full">
+      <Icon className="text-primary text-6xl" />
+      <div className="">
+        <h4 className="text-semi-muted-text text-2xl md:text-base lg:text-2xl leading-none">
+          {subText}
+        </h4>
+        <h3 className="font-semibold text-4xl md:text-5xl lg:text-[56px] leading-none">
+          {text}
+          <span className="text-xl lg:text-2xl text-muted-text">
+            {subHeading}
+          </span>
+        </h3>
       </div>
-    </RevealItem>
+    </div>
   );
 }

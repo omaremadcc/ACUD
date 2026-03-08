@@ -61,18 +61,16 @@ export default function Parteners() {
         subText="Parteners in Success"
         Icon={FaHandshake}
       />
-      <RevealItem delay={0.5}>
-        <div className="w-2/3 flex items-center justify-center flex-wrap mx-auto gap-4 py-10">
-          {parteners.map((partner, index) => (
-            <a key={index} href={partner.link}>
-              <div
-                className="min-h-15 w-36 bg-semi-muted-text mask mask-center mask-no-repeat mask-contain"
-                style={{ maskImage: `url('/parteners/${partner.logo}')` }}
-              ></div>
-            </a>
-          ))}
-        </div>
-      </RevealItem>
+      <div className="w-2/3 flex items-center justify-center flex-wrap mx-auto gap-4 py-10">
+        {parteners.map((partner, index) => (
+          <a key={index} href={partner.link}>
+            <div
+              className="min-h-15 w-36 bg-semi-muted-text mask mask-center mask-no-repeat mask-contain"
+              style={{ maskImage: `url('/parteners/${partner.logo}')` }}
+            ></div>
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
