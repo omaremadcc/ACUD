@@ -2,6 +2,7 @@
 import { motion, cubicBezier } from "framer-motion";
 import { useEffect, useState } from "react";
 import RevealText from "../RevealText";
+import SlideUpText from "../SlideUpText";
 
 const images = Array.from({ length: 12 }, (_, i) => i + 1);
 
@@ -99,15 +100,17 @@ export default function Hero() {
           </div>
         </div>
       )}
-      <div className="py-10 responsive-container">
+      <div className="py-10 responsive-container text-center">
         <h4 className="text-muted-text text-xl md:text-xl font-medium mx-auto text-center md:max-w-1/2">
           ADMINSTRATIVE CAPITAL FOR URBAN DEVELOPMENT
         </h4>
         <p className="text-base md:text-4xl text-semi-muted-text lg:max-w-[40%] text-center mx-auto">
-          <span className="text-text">ACUD</span>, founded in{" "}
-          <span className="text-text">2016</span>, leads the development of{" "}
-          <span className="text-text">Egypt's New Capital</span>. A smart,
-          sustainable city built on innovation, technology, and green design.
+          <span className="text-text font-semibold">ACUD</span>, founded in{" "}
+          <span className="text-text font-semibold">2016</span>, leads the
+          development of{" "}
+          <span className="text-text font-semibold">Egypt's New Capital</span>.
+          A smart, sustainable city built on innovation, technology, and green
+          design.
         </p>
       </div>
     </>
