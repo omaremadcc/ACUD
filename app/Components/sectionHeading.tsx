@@ -23,6 +23,7 @@ export default function SectionHeading({
       </SlideUpText>
       <SlideUpText
         once
+        mode="word"
         delay={0.4}
         className="text-muted-text text-2xl text-center font-normal"
       >
