@@ -5,7 +5,12 @@ export default function NewCapitalCap() {
     <div className="flex flex-col md:flex-row responsive-container items-start justify-center gap-10 py-20">
       <div>
         <RiTaxiWifiLine className="text-primary text-6xl" />
-        <Link005 href="/" className="font-medium text-5xl py-2 underline w-fit">
+        <Link005
+          href={
+            "https://play.google.com/store/apps/details?id=com.capitalTaxiApp&pcampaignid=web_share&pli=1"
+          }
+          className="font-medium text-5xl py-2 underline w-fit"
+        >
           New Capital Cap
         </Link005>
         <h5 className="text-semi-muted-text text-3xl">

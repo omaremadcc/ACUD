@@ -97,6 +97,7 @@ const Link002 = ({
   return (
     <a
       href={href}
+      target="_blank"
       className={cn(
         "group relative flex items-center",
         className,
@@ -137,6 +138,7 @@ const Link003 = ({
   return (
     <a
       href={href}
+      target="_blank"
       className={cn(
         "group relative flex items-center",
         className,
@@ -178,6 +180,7 @@ const Link004 = ({
   return (
     <a
       href={href}
+      target="_blank"
       className={cn(
         "group relative flex items-center",
         className,
@@ -217,6 +220,7 @@ const Link005 = ({
 }) => {
   return (
     <a
+      target="_blank"
       href={href}
       className={cn(
         className,
