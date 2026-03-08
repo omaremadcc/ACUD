@@ -62,7 +62,7 @@ export default function NewCapital() {
         subText="New Capital. New Start"
         Icon={GiObelisk}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 sm:gap-x-20 md:gap-x-20 lg:gap-x-40 gap-y-10 w-fit mx-auto my-20 px-5">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-y-10 responsive-container my-20 px-5">
         {facts.map((fact, index) => (
           <Card key={index} {...fact} />
         ))}
@@ -83,7 +83,7 @@ function Card({
   subHeading?: string;
 }) {
   return (
-    <div className="flex items-center gap-5 responsive-container">
+    <div className="flex items-center gap-5 responsive-container w-full">
       <Icon className="text-primary text-6xl" />
       <div className="">
         <h4 className="text-semi-muted-text text-2xl md:text-base lg:text-2xl leading-none">
