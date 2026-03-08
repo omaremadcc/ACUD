@@ -1,5 +1,6 @@
 "use client";
-import { motion, cubicBezier } from "framer-motion";
+import { CUBIC_BEIZER } from "@/app/utils/utils";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import RevealText from "../RevealText";
 import SlideUpText from "../SlideUpText";
@@ -7,7 +8,6 @@ import SlideUpText from "../SlideUpText";
 const images = Array.from({ length: 12 }, (_, i) => i + 1);
 
 export default function Hero() {
-  const CUBIC_BEIZER = cubicBezier(0.6, 0.05, 0, 0.9);
   const [index, setIndex] = useState(0);
   const [startImages, setStartImages] = useState(false);
   const [reverse, setReverse] = useState(false);

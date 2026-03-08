@@ -1,6 +1,6 @@
 "use client";
-
-import { motion, cubicBezier } from "framer-motion";
+import { CUBIC_BEIZER } from "@/app/utils/utils";
+import { motion } from "framer-motion";
 import React from "react";
 
 import { cn } from "@/lib/utils";
@@ -61,8 +61,6 @@ export const Skiper58 = () => {
 };
 
 const STAGGER = 0.035;
-
-const CUBIC_BEIZER = cubicBezier(0.6, 0.05, 0, 0.9);
 
 const TextRoll: React.FC<{
   children: string;

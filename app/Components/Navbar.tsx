@@ -1,5 +1,6 @@
 "use client";
-import { motion, cubicBezier } from "framer-motion";
+import { motion } from "framer-motion";
+import { CUBIC_BEIZER } from "../utils/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
@@ -10,7 +11,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const CUBIC_BEIZER = cubicBezier(0.6, 0.05, 0, 0.9);
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 0);
@@ -72,7 +72,7 @@ export default function Navbar() {
           <MenuIcon isToggled={toggle} />
         </button>
         <motion.div
-          className="bg-background fixed inset-0 gap-1 flex flex-col items-center justify-center text-[calc(1.5em+6vw)] text-nowrap font-extrabold"
+          className="bg-secondary-background fixed inset-0 gap-1 flex flex-col items-center justify-center text-[calc(1.5em+6vw)] text-nowrap font-extrabold"
           variants={{
             hidden: { y: "-100%" },
             visible: { y: "0" },

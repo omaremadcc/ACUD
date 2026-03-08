@@ -1,5 +1,7 @@
 "use client";
-import { motion, cubicBezier } from "framer-motion";
+
+import { motion } from "framer-motion";
+import { CUBIC_BEIZER } from "../utils/utils";
 
 type SlideUpTextProps = {
   children: string;
@@ -24,8 +26,6 @@ export default function SlideUpText({
     mode === "word"
       ? children.split(" ").map((w, i) => (i === 0 ? w : " " + w))
       : children.split("");
-
-  const CUBIC_BEIZER = cubicBezier(0.6, 0.05, 0, 0.9);
 
   return (
     <span
