@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { CUBIC_BEIZER } from "../utils/utils";
 
@@ -9,8 +8,8 @@ type SlideUpTextProps = {
   once?: boolean;
   delayStep?: number;
   duration?: number;
-  mode?: "char" | "word";
   delay?: number;
+  mode?: "char" | "word";
 };
 
 export default function SlideUpText({
@@ -22,50 +21,98 @@ export default function SlideUpText({
   delay = 0,
   mode = "char",
 }: SlideUpTextProps) {
-  const items =
-    mode === "word"
-      ? children.split(" ").map((w, i) => (i === 0 ? w : " " + w))
-      : children.split("");
+  if (mode === "word") {
+    const words = children.split(" ");
 
-  return (
-    <span
-      className={className}
-      style={{
-        display: "inline-flex",
-        flexWrap: "wrap",
-      }}
-    >
-      {items.map((item, i) => {
-        const isSpace = item === " ";
-
-        return (
-          <span
-            key={`${item}-${i}`}
-            style={{
-              display: "inline-block",
-              overflow: "hidden",
-              lineHeight: 1,
-            }}
-          >
-            <motion.span
-              initial={{ y: "100%" }}
-              whileInView={{ y: "0%" }}
-              viewport={{ once }}
-              transition={{
-                duration,
-                delay: i * delayStep + delay,
-                ease: CUBIC_BEIZER,
-              }}
+    return (
+      <span className={className}>
+        {words.map((word, i) => (
+          <span key={`${word}-${i}`}>
+            <span
               style={{
                 display: "inline-block",
-                whiteSpace: "pre",
+                overflow: "hidden",
+                whiteSpace: "nowrap",
+                verticalAlign: "bottom",
               }}
             >
-              {isSpace ? "\u00A0" : item}
-            </motion.span>
+              <motion.span
+                initial={{ y: "100%" }}
+                whileInView={{ y: "0%" }}
+                viewport={{ once }}
+                transition={{
+                  duration,
+                  delay: i * delayStep + delay,
+                  ease: CUBIC_BEIZER,
+                }}
+                style={{
+                  display: "inline-block",
+                  whiteSpace: "pre",
+                }}
+              >
+                {word}
+              </motion.span>
+            </span>
+
+            {i !== words.length - 1 && (
+              <span style={{ whiteSpace: "pre" }}> </span>
+            )}
           </span>
-        );
-      })}
+        ))}
+      </span>
+    );
+  }
+
+  const words = children.split(" ");
+  let globalIndex = 0;
+
+  return (
+    <span className={className}>
+      {words.map((word, wordIndex) => (
+        <span
+          key={`${word}-${wordIndex}`}
+          style={{
+            display: "inline-block",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {word.split("").map((char) => {
+            const index = globalIndex++;
+            return (
+              <span
+                key={`${char}-${index}`}
+                style={{
+                  display: "inline-block",
+                  overflow: "hidden",
+                  lineHeight: 1,
+                  verticalAlign: "bottom",
+                }}
+              >
+                <motion.span
+                  initial={{ y: "100%" }}
+                  whileInView={{ y: "0%" }}
+                  viewport={{ once }}
+                  transition={{
+                    duration,
+                    delay: index * delayStep + delay,
+                    ease: CUBIC_BEIZER,
+                  }}
+                  style={{
+                    display: "inline-block",
+                    whiteSpace: "pre",
+                  }}
+                >
+                  {char}
+                </motion.span>
+              </span>
+            );
+          })}
+
+          {wordIndex !== words.length - 1 && (
+            <span style={{ whiteSpace: "pre" }}> </span>
+          )}
+        </span>
+      ))}
     </span>
   );
 }

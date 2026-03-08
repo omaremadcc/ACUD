@@ -1,5 +1,6 @@
-import React from "react";
 import { IconType } from "react-icons";
+import { RevealItem } from "./RevealItem";
+import SlideUpText from "./SlideUpText";
 
 interface InfoSectionProps {
   text: string;
@@ -14,11 +15,19 @@ export default function SectionHeading({
 }: InfoSectionProps) {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <Icon className="text-primary text-6xl mb-2" />
-      <h2 className="text-5xl font-medium">{text}</h2>
-      <p className="text-muted-text text-2xl text-center font-normal">
+      <RevealItem>
+        <Icon className="text-primary text-6xl mb-2" />
+      </RevealItem>
+      <SlideUpText delay={0.2} className="text-5xl font-medium">
+        {text}
+      </SlideUpText>
+      <SlideUpText
+        once
+        delay={0.4}
+        className="text-muted-text text-2xl text-center font-normal"
+      >
         {subText}
-      </p>
+      </SlideUpText>
     </div>
   );
 }
