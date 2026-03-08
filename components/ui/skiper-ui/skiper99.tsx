@@ -54,7 +54,6 @@ export const MenuIcon = ({
   className?: string;
   isToggled?: boolean;
 }) => {
-  console.log(isToggled);
   const [toggle, setToggle] = useState(isToggled);
 
   useEffect(() => {

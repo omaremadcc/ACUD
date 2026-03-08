@@ -1,4 +1,3 @@
-import { GiObelisk } from "react-icons/gi";
 import SectionHeading from "../sectionHeading";
 import { IconType } from "react-icons";
 import {
@@ -7,7 +6,6 @@ import {
   FaGlobeAmericas,
   FaUsers,
   FaGraduationCap,
-  FaChartBar,
 } from "react-icons/fa";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { BiBarChartSquare } from "react-icons/bi";

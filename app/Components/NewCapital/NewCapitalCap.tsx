@@ -33,7 +33,7 @@ export default function NewCapitalCap() {
             duration={1}
             delayStep={0.02}
             mode="word"
-            delay={1.6}
+            delay={1.3}
           >
             You are safe with us during your journey in the New Capital, as each
             taxi is equipped with internal surveillance cameras and tracking
