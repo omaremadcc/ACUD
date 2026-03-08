@@ -1,4 +1,3 @@
-import { RevealItem } from "../RevealItem";
 import { FaHandshake } from "react-icons/fa6";
 import SectionHeading from "../sectionHeading";
 

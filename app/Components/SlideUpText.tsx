@@ -39,7 +39,7 @@ export default function SlideUpText({
               <motion.span
                 initial={{ y: "100%" }}
                 whileInView={{ y: "0%" }}
-                viewport={{ once }}
+                viewport={{ once, amount: 0 }}
                 transition={{
                   duration,
                   delay: i * delayStep + delay,
@@ -91,7 +91,7 @@ export default function SlideUpText({
                 <motion.span
                   initial={{ y: "100%" }}
                   whileInView={{ y: "0%" }}
-                  viewport={{ once }}
+                  viewport={{ once, amount: 0 }}
                   transition={{
                     duration,
                     delay: index * delayStep + delay,

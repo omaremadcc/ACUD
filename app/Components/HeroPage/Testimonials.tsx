@@ -1,4 +1,3 @@
-import { RevealItem } from "../RevealItem";
 import SlideUpText from "../SlideUpText";
 
 export default function Testimonials() {
@@ -17,23 +16,21 @@ export default function Testimonials() {
           city of the future
         </SlideUpText>
       </div>
-      <RevealItem delay={0.4} duration={0.75}>
-        <div>
-          <div
-            className="h-15 md:h-20 aspect-5/1 bg-semi-muted-text mask mask-center mask-no-repeat mask-contain"
-            style={{ maskImage: `url('/parteners/honeywell.png')` }}
-          ></div>
-          <h4 className="text-2xl md:text-4xl">Operation Director</h4>
-          <h3 className="md:text-2xl text-muted-text">Waste Management</h3>
-          <p className="text-semi-muted-text text-2xl md:text-4xl italic">
-            <span className="text-primary">{'"'}</span>
-            The New Capital represents the future of sustainable urban
-            development. Our collaboration with ACUD has set new standards for
-            integrated building management systems.
-            <span className="text-primary">{'"'}</span>
-          </p>
-        </div>
-      </RevealItem>
+      <div>
+        <div
+          className="h-15 md:h-20 aspect-5/1 bg-semi-muted-text mask mask-center mask-no-repeat mask-contain"
+          style={{ maskImage: `url('/parteners/honeywell.png')` }}
+        ></div>
+        <h4 className="text-2xl md:text-4xl">Operation Director</h4>
+        <h3 className="md:text-2xl text-muted-text">Waste Management</h3>
+        <p className="text-semi-muted-text text-2xl md:text-4xl italic">
+          <span className="text-primary">{'"'}</span>
+          The New Capital represents the future of sustainable urban
+          development. Our collaboration with ACUD has set new standards for
+          integrated building management systems.
+          <span className="text-primary">{'"'}</span>
+        </p>
+      </div>
     </div>
   );
 }

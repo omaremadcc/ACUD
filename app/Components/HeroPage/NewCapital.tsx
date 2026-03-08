@@ -1,4 +1,3 @@
-import { RevealItem } from "../RevealItem";
 import { GiObelisk } from "react-icons/gi";
 import SectionHeading from "../sectionHeading";
 import { IconType } from "react-icons";
@@ -63,13 +62,11 @@ export default function NewCapital() {
         subText="New Capital. New Start"
         Icon={GiObelisk}
       />
-      <RevealItem>
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-y-10 responsive-container my-20 px-5">
-          {facts.map((fact, index) => (
-            <Card key={index} {...fact} />
-          ))}
-        </div>
-      </RevealItem>
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-y-10 responsive-container my-20 px-5">
+        {facts.map((fact, index) => (
+          <Card key={index} {...fact} />
+        ))}
+      </div>
     </div>
   );
 }
