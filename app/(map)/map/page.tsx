@@ -14,16 +14,12 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { BsHouse, BsTreeFill } from "react-icons/bs";
-import {
-  GiCeilingLight,
-  GiEgyptianWalk,
-  GiObelisk,
-  GiPrayer,
-} from "react-icons/gi";
+import { GiCeilingLight, GiEgyptianWalk, GiObelisk } from "react-icons/gi";
 import { RiGovernmentFill } from "react-icons/ri";
-import { MdWater } from "react-icons/md";
+import { MdFilterVintage, MdWater } from "react-icons/md";
 import { LuTheater } from "react-icons/lu";
 import { GrFlagFill } from "react-icons/gr";
+import Link from "next/link";
 
 const zoomOrigin = [
   0,
@@ -221,7 +217,7 @@ const slides: SlideContent[] = [
         main: "100k",
       },
     ],
-    images: ["r31.jpg", "r32.jpg"],
+    images: ["r31.jpg", "r32.webp"],
   },
   {
     heading: "THE CLUB",
@@ -268,13 +264,18 @@ const slides: SlideContent[] = [
     ],
   },
   {
-    heading: "RESDENETIAL 5",
-    subHeading: "Where the Future Lives.",
+    heading: "NEW GARDEN CITY",
+    subHeading: "Where Classic Cairo Lives Again.",
     facts: [
       {
         Icon: FaMapMarkedAlt,
         main: "1,000",
         sub: "Area (acre)",
+      },
+      {
+        Icon: MdFilterVintage,
+        main: "Recreating the Aesthetics of historic Cairo",
+        sub: "",
       },
     ],
     images: ["r51.jpg", "r52.webp"],
@@ -395,7 +396,7 @@ const slides: SlideContent[] = [
         sub: "Area (acre)",
       },
       {
-        Icon: GiPrayer,
+        Icon: FaPray,
         main: "17,000",
         sub: "Capacity",
       },
@@ -485,7 +486,7 @@ const slides: SlideContent[] = [
       },
       {
         Icon: LuTheater,
-        main: "The Largest in the Middle East",
+        main: "The Largest Opera House in the Middle East",
         sub: "2,000 Capacity",
       },
     ],
@@ -555,6 +556,12 @@ export default function MapPage() {
 
   return (
     <div className="">
+      <Link
+        href="/"
+        className="text-xl border-white border fixed top-10 right-10 z-1001 p-2 flex items-center justify-center rounded-full hover:bg-white hover:text-black cursor-pointer transition-all"
+      >
+        <RxCross2 />
+      </Link>
       <div className="w-screen h-screen overflow-hidden">
         <motion.div
           className="top-0 w-screen h-screen z-1000"
@@ -629,7 +636,11 @@ function Path({
       id={id}
       initial={{ opacity: 0, pathLength: 0 }}
       whileInView={{ opacity: 1, pathLength: 1 }}
-      transition={{ ease: CUBIC_BEIZER, duration: 0.8 + index * 0.1 }}
+      transition={{
+        ease: CUBIC_BEIZER,
+        duration: 0.8,
+        delay: 0.2 + index * 0.1,
+      }}
       onClick={(e) => {
         e.stopPropagation();
         setSelectedDistrict(index);
