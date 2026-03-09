@@ -562,9 +562,9 @@ export default function MapPage() {
       >
         <RxCross2 />
       </Link>
-      <div className="w-screen h-screen overflow-hidden">
+      <div className="w-screen h-screen overflow-hidden flex items-center justify-center">
         <motion.div
-          className="top-0 w-screen h-screen z-1000"
+          className="relative w-[70vw] max-w-[70vw] h-auto rounded-2xl overflow-hidden border-8 border-secondary-background"
           variants={{
             normal: { scale: 1 },
             zoom: { scale: 3 },
@@ -573,32 +573,28 @@ export default function MapPage() {
           style={{ transformOrigin: zoomOrigin[lastSelectedDistrict] }}
           transition={{ duration: 1, delay: 0.1, ease: CUBIC_BEIZER }}
           onClick={() =>
-            setSelectedDistrict(selectedDistrict != 0 ? 0 : selectedDistrict)
+            setSelectedDistrict(selectedDistrict !== 0 ? 0 : selectedDistrict)
           }
         >
           <img
             src="/map/map.png"
-            className="mx-auto w-full h-full opacity-50 object-contain"
+            alt="Map"
+            className="block w-full h-auto opacity-40 object-contain select-none pointer-events-none"
           />
-          {/* left gradient */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-2/5 bg-gradient-to-r from-black to-transparent" />
 
-          {/* right gradient */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-2/5 bg-gradient-to-l from-black to-transparent" />
           <svg
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full z-20"
             viewBox="0 0 841.89 473.76"
+            preserveAspectRatio="xMidYMid meet"
           >
-            {districts.map((district, index) => {
-              return (
-                <Path
-                  key={district.id}
-                  {...district}
-                  index={index + 1}
-                  setSelectedDistrict={setSelectedDistrict}
-                />
-              );
-            })}
+            {districts.map((district, index) => (
+              <Path
+                key={district.id}
+                {...district}
+                index={index + 1}
+                setSelectedDistrict={setSelectedDistrict}
+              />
+            ))}
           </svg>
         </motion.div>
       </div>
