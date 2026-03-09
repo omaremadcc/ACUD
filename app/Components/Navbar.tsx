@@ -28,7 +28,7 @@ export default function Navbar() {
         },
       )}
     >
-      <div className="flex items-center justify-between ">
+      <div className="flex items-center justify-between">
         <Link href="/">
           <img src="/Logo.svg" alt="logo" className="h-20 cursor-pointer" />
         </Link>
@@ -92,12 +92,22 @@ export default function Navbar() {
             </p>
           </Link>
           <Link
+            href="/map"
+            className="relative inline-block group"
+            onClick={(e) => setToggle(false)}
+          >
+            <p className="hidden md:block absolute right-full transition-all duration-800 group-hover:-translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
+              INTERACTIVE?
+            </p>
+            <TextRoll duration={0.8}>MAP</TextRoll>
+          </Link>
+          <Link
             href="/about"
             className="relative inline-block group"
             onClick={(e) => setToggle(false)}
           >
             <TextRoll duration={0.8}>ABOUT</TextRoll>
-            <p className="hidden md:block absolute right-full transition-all duration-800 group-hover:-translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
+            <p className="hidden md:block absolute left-full transition-all duration-800 group-hover:translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
               WHO WE ARE
             </p>
           </Link>
@@ -107,7 +117,7 @@ export default function Navbar() {
             onClick={(e) => setToggle(false)}
           >
             <TextRoll duration={0.8}>NEW-CAPITAL</TextRoll>
-            <p className="hidden md:block absolute left-full transition-all duration-800 group-hover:translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
+            <p className="hidden md:block absolute right-full transition-all duration-800 group-hover:-translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
               MEGA PROJECT
             </p>
           </Link>
@@ -117,7 +127,7 @@ export default function Navbar() {
             onClick={(e) => setToggle(false)}
           >
             <TextRoll duration={0.8}>PARTENERS</TextRoll>
-            <p className="hidden md:block absolute right-full transition-all duration-800 group-hover:-translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
+            <p className="hidden md:block absolute left-full transition-all duration-800 group-hover:translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
               SUCCESS
             </p>{" "}
           </Link>
