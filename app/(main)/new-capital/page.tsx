@@ -1,7 +1,7 @@
-import NewCapitalAtGlance from "../Components/About/NewCapitalAtGlance";
-import CapitalPillars from "../Components/NewCapital/CapitalPillars";
-import NewCapitalCap from "../Components/NewCapital/NewCapitalCap";
-import RevealText from "../Components/RevealText";
+import NewCapitalAtGlance from "@/app/Components/About/NewCapitalAtGlance";
+import CapitalPillars from "@/app/Components/NewCapital/CapitalPillars";
+import NewCapitalCap from "@/app/Components/NewCapital/NewCapitalCap";
+import RevealText from "@/app/Components/RevealText";
 
 export default function NewCapital() {
   return (
