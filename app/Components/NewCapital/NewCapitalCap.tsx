@@ -12,17 +12,17 @@ export default function NewCapitalCap() {
           }
           className="font-medium text-5xl py-2 underline w-fit"
         >
-          <SlideUpText once duration={2} delayStep={0.04}>
+          <SlideUpText once duration={0.6} delayStep={0.04}>
             New Capital Cap
           </SlideUpText>
         </Link005>
         <h5 className="text-semi-muted-text text-2xl">
           <SlideUpText
             once
-            duration={1}
+            duration={0.6}
             delayStep={0.02}
             mode="word"
-            delay={0.8}
+            delay={0.4}
           >
             Introducing a safe, smart, green & sustainable transportation way.
           </SlideUpText>
@@ -30,10 +30,10 @@ export default function NewCapitalCap() {
         <p className="text-muted-text text-xl">
           <SlideUpText
             once
-            duration={1}
+            duration={0.6}
             delayStep={0.02}
             mode="word"
-            delay={1.3}
+            delay={0.6}
           >
             You are safe with us during your journey in the New Capital, as each
             taxi is equipped with internal surveillance cameras and tracking

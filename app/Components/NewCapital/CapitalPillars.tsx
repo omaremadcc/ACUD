@@ -1,4 +1,4 @@
-import { FaParking, FaUniversity } from "react-icons/fa";
+import { FaParking, FaUniversity, FaWind } from "react-icons/fa";
 import SectionHeading from "../sectionHeading";
 import { AiFillSun, AiOutlineWifi } from "react-icons/ai";
 import {
@@ -42,7 +42,7 @@ export default function CapitalPillars() {
             Where innovation and technology create a truly smart and connected
             urban experience
           </h6>
-          <ul className="my-3">
+          <ul className="my-3 space-y-2">
             <PillarItem
               Icon={AiOutlineWifi}
               title="Connectivity"
@@ -65,21 +65,21 @@ export default function CapitalPillars() {
         <img
           src="/capital/2.webp"
           alt="New Capital"
-          className="md:max-w-[30%]"
+          className="md:max-w-[20%]"
         />
         <div>
           <span className="text-semi-muted-text text-xl">
             Every Citizen has 15m of green area
           </span>
           <div className="flex items-center gap-4">
-            <PiTreeEvergreenFill className="text-primary text-4xl" />
+            <PiTreeEvergreenFill className="text-primary text-5xl" />
             <h3 className="text-4xl font-medium">Green City</h3>
           </div>
           <h6 className="text-2xl font-medium text-muted-text">
             A Green Oasis of Ingenuity where sustainability converges with
             innovation
           </h6>
-          <ul className="my-3 grid grid-cols-2">
+          <ul className="my-3 grid grid-cols-2 gap-x-3 gap-y-2">
             <PillarItem
               Icon={BiRecycle}
               title="Smart Waste Management"
@@ -121,15 +121,15 @@ export default function CapitalPillars() {
         />*/}
         <div>
           <div className="flex items-center gap-4">
-            <BiRecycle className="text-primary text-4xl" />
+            <BiRecycle className="text-primary text-5xl" />
             <h3 className="text-4xl font-medium">Sustainable City</h3>
           </div>
           <h6 className="text-2xl font-medium text-muted-text">
             Where sustainability meets modernity in perfect harmony
           </h6>
-          <ul className="my-3 grid grid-cols-2">
+          <ul className="my-3 grid grid-cols-2 gap-x-3 gap-y-1">
             <PillarItem
-              Icon={WiSnowflakeCold}
+              Icon={FaWind}
               title="District Cooling Plant"
               description="Largest in Egypt and Africa with 64,000 tons initial capacity. Expanding to 300,000 tons over five years."
             />
@@ -169,13 +169,13 @@ export default function CapitalPillars() {
         />
         <div>
           <div className="flex items-center gap-4">
-            <FaRoad className="text-primary text-4xl" />
+            <FaRoad className="text-primary text-5xl" />
             <h3 className="text-4xl font-medium">Connected City</h3>
           </div>
           <h6 className="text-2xl font-medium text-muted-text">
             Where connectivity meets sustainability in seamless fusion
           </h6>
-          <ul className="my-3">
+          <ul className="my-3 space-y-2">
             <PillarItem
               Icon={BsPersonWalking}
               title="Pedestrian Walkways"
@@ -205,13 +205,13 @@ interface PillarItemProps {
 
 function PillarItem({ Icon, title, description }: PillarItemProps) {
   return (
-    <li className="flex gap-2 items-start">
-      <Icon className="text-primary text-4xl" />
+    <li className="flex gap-4 items-start">
+      <Icon className="text-primary text-5xl" />
       <div>
-        <span className="text-2xl text-semi-muted-text font-medium">
+        <span className="text-3xl text-semi-muted-text font-medium">
           {title}
         </span>
-        <p className="text-sm text-muted-text">{description}</p>
+        <p className="text-lg text-muted-text">{description}</p>
       </div>
     </li>
   );
