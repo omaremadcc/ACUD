@@ -61,7 +61,7 @@ function Card({
   date: string;
 }) {
   return (
-    <div className="bg-secondary-background py-8 px-4 space-y-2">
+    <div className="bg-secondary-background py-8 px-6 space-y-2 ">
       <div className="flex gap-4 justify-between items-center">
         <div className="flex items-center gap-3">
           <Icon className="text-primary text-4xl" />
@@ -73,7 +73,7 @@ function Card({
         <h3 className="font-medium text-2xl text-semi-muted-text">
           {subTitle}
         </h3>
-        <p className="text-muted-text">{paragraph}</p>
+        <p className="text-muted-text text-lg">{paragraph}</p>
       </div>
     </div>
   );
