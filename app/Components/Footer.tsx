@@ -26,8 +26,8 @@ export default function Footer() {
           <Link005 className="w-fit" href="/media-center">
             Media Center
           </Link005>
-          <Link005 className="w-fit" href="/parteners">
-            Parteners
+          <Link005 className="w-fit" href="/partners">
+            Partners
           </Link005>
           <Link005 className="w-fit" href="/contact">
             Contact Us

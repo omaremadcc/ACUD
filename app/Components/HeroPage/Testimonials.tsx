@@ -5,7 +5,7 @@ export default function Testimonials() {
     <div className="flex flex-col lg:flex-row justify-center gap-10 mx-auto px-10 py-20">
       <div>
         <SlideUpText className="text-5xl md:text-8xl">
-          Partener Testimonials
+          Partner Testimonials
         </SlideUpText>
         <SlideUpText
           className="md:text-2xl text-muted-text"

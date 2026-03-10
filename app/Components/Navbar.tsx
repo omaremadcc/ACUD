@@ -122,11 +122,11 @@ export default function Navbar() {
             </p>
           </Link>
           <Link
-            href="/parteners"
+            href="/partners"
             className="relative inline-block group"
             onClick={(e) => setToggle(false)}
           >
-            <TextRoll duration={0.8}>PARTENERS</TextRoll>
+            <TextRoll duration={0.8}>PARTNERS</TextRoll>
             <p className="hidden md:block absolute left-full transition-all duration-800 group-hover:translate-x-7 ml-2 top-1/2 -translate-y-1/2 font-mono text-2xl font-medium text-muted-text">
               SUCCESS
             </p>{" "}

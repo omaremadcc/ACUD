@@ -56,8 +56,8 @@ export default function Parteners() {
   return (
     <div className="py-20">
       <SectionHeading
-        text="Parteners"
-        subText="Parteners in Success"
+        text="Partners"
+        subText="Partners in Success"
         Icon={FaHandshake}
       />
       <div className="w-2/3 flex items-center justify-center flex-wrap mx-auto gap-4 py-10">
