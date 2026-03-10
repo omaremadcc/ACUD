@@ -1,5 +1,4 @@
 import Awards from "../Components/HeroPage/Awards";
-import CapitalDistricts from "../Components/HeroPage/CapitalDistricts";
 import Hero from "../Components/HeroPage/Hero";
 import NewCapital from "../Components/HeroPage/NewCapital";
 import Parteners from "../Components/HeroPage/Parteners";
@@ -11,7 +10,6 @@ export default function Home() {
       <Hero />
       <Awards />
       <NewCapital />
-      {/*<CapitalDistricts />*/}
       <Parteners />
       <Testimonials />
     </div>

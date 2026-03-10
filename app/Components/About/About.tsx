@@ -12,7 +12,7 @@ export default function About() {
       <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-10 responsive-container py-20">
         <div>
           <h3 className="text-4xl font-semibold">Our Mission</h3>
-          <p className="text-muted-text text-xl">
+          <p className="text-muted-text text-2xl">
             To shape a dynamic urban ecosystem that enhances quality of life,
             attracts global partnerships, and drives national progress. Through
             visionary planning and strategic execution, ACUD is redefining the
@@ -33,7 +33,7 @@ export default function About() {
         />
         <div>
           <h3 className="text-4xl font-semibold">Our Vision</h3>
-          <p className="text-muted-text text-xl">
+          <p className="text-muted-text text-2xl">
             To pioneer the integration of advanced technology and human-centric
             design, creating an environment where sustainability, innovation,
             and prosperity thrive for both residents and investors.

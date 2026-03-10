@@ -22,20 +22,20 @@ export default function Page() {
           <h6 className="text-lg md:text-2xl text-semi-muted-text font-semibold">
             Our Story
           </h6>
-          <h3 className="font-semibold text-3xl md:text-5xl">
+          <h3 className="font-semibold text-3xl md:text-5xl mb-2">
             Leading Egypt's Urban Transformation
           </h3>
-          <p className="text-muted-text md:text-xl">
+          <p className="text-muted-text md:text-3xl">
             ACUD, founded in 2016, is the driving force behind Egypt's most
             ambitious urban development project - the New Capital. Our mission
             is to create a world-class, sustainable city that serves as the new
             political and administrative hub of Egypt.
           </p>
-          <p className="text-muted-text md:text-xl mt-5">
+          {/*<p className="text-muted-text md:text-xl mt-5">
             We are committed to excellence, innovation, and sustainable
             development, working with global partners to build a city that meets
             the highest international standards.
-          </p>
+          </p>*/}
         </div>
         <img src="/about/1.webp" alt="New Capital" className="max-w-[40%]" />
       </div>
