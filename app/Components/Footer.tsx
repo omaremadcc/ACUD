@@ -86,7 +86,10 @@ export default function Footer() {
       </div>
       <div className="w-full h-px bg-muted-text mt-4" />
       <div className="flex justify-between text-muted-text">
-        <h6>© 2026. ACUD </h6>
+        <h6>
+          This Website Is Fan Art And Isn't affiliated with ACUD or any of its
+          subsidiaries.
+        </h6>
         <h6>ALL RIGHTS RESERVED</h6>
       </div>
     </div>
