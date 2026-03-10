@@ -3,6 +3,56 @@ import RevealText from "../../Components/RevealText";
 import { FaIndustry } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
+const parteners = [
+  {
+    logo: "dar.png",
+    link: "/",
+  },
+  {
+    logo: "dell.png",
+    link: "/",
+  },
+  {
+    logo: "dorsch.png",
+    link: "/",
+  },
+  {
+    logo: "environics.png",
+    link: "/",
+  },
+  {
+    logo: "honeywell.png",
+    link: "/",
+  },
+  {
+    logo: "hp.png",
+    link: "/",
+  },
+  {
+    logo: "huawei.png",
+    link: "/",
+  },
+  {
+    logo: "orange.png",
+    link: "/",
+  },
+  {
+    logo: "savills.png",
+    link: "/",
+  },
+  {
+    logo: "schneider.png",
+    link: "/",
+  },
+  {
+    logo: "siemens.png",
+    link: "/",
+  },
+  {
+    logo: "wycombe.png",
+    link: "/",
+  },
+];
 export default function Parteners() {
   return (
     <>
@@ -34,6 +84,16 @@ export default function Parteners() {
             <h1 className="hero-heading">PARTENERS</h1>
           </RevealText>
         </div>
+      </div>
+      <div className="w-2/3 flex items-center justify-center flex-wrap mx-auto gap-4 py-20">
+        {parteners.map((partner, index) => (
+          <a key={index} href={partner.link}>
+            <div
+              className="min-h-15 w-36 bg-semi-muted-text mask mask-center mask-no-repeat mask-contain"
+              style={{ maskImage: `url('/parteners/${partner.logo}')` }}
+            ></div>
+          </a>
+        ))}
       </div>
       <div className="flex flex-col items-center justify-center py-20 responsive-container text-center">
         <h2 className="text-6xl font-semibold">Interested in Vendorship?</h2>
